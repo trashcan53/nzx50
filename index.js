@@ -1,6 +1,6 @@
 const getData = () => 
 {
-	const fetchPromise = fetch('https://sheets.googleapis.com/v4/spreadsheets/1dhd1FU0VmBB0DnqCyM7X2VEpONIWf8MkNJcYklJG-WY/values/Sheet1',
+	const fetchPromise = fetch('https://spreadsheets.google.com/feeds/cells/1dcZgBDx01ioeGJSABYKXCqKS9k53s7iQCavlR9D-HfY/od6/public/basic?alt=json',
 	{
 		headers:	{
 			"Accept" : "application/json",
@@ -12,6 +12,9 @@ const getData = () =>
 	streamPromise.then((j) => console.log(j));
 	
 }
+
+
+
 
 window.addEventListener('load', (event) => {
 	getData();
