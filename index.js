@@ -9,12 +9,14 @@ const getData = () =>
 
 	const streamPromise = fetchPromise.then((response) => response.json());
 	
-	streamPromise.then((j) => console.log(j));
+	streamPromise.then((j) => showData(j));
 	
 }
 
 
-
+const showData = (rawData) => { 
+	console.log(rawData.feed.entry);
+}
 
 window.addEventListener('load', (event) => {
 	getData();
