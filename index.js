@@ -15,7 +15,10 @@ const getData = () =>
 
 
 const showData = (rawData) => { 
-	console.log(rawData.feed.entry);
+	for (i = 0;i<rawData.feed.entry.length;i++){
+		console.log(rawData.feed.entry[i].content[1]);
+	}
+	
 }
 
 window.addEventListener('load', (event) => {
