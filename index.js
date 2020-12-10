@@ -14,7 +14,7 @@ const getData = () =>
 
 	const streamPromise = fetchPromise.then((response) => response.json());
 	
-	streamPromise.then((j) => console.log(j);
+	streamPromise.then((j) => console.log(j));
 
 }
 
